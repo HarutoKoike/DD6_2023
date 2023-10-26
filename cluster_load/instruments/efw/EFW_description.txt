@@ -1,0 +1,256 @@
+C3_PP_EFW,
+---
+This dataset contains preliminary spin resolution measurements of the electric field from the EFW experiment on the Cluster C3 spacecraft. These data have been converted into Cluster Exchange Format from the orignal Cluster Science Data System Common Data Format (CDF) Prime Parameter files that were made available through the Cluster Science Data System. The metadata has been updated from the CSDS/CDF standard to the CAA to aid compatibility with tools developed for the Cluster Active Archive.  Version 01 of this dataset is the initial translation prepared for the launch of the CAA during the second half of 2005
+
+
+
+C3_CQ_EFW_INST,
+---
+This dataset contains operation caveats information from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P32,
+---
+This dataset contains measurements of the Potential difference measured between probes 3 and 2 from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P34,
+---
+This dataset contains measurements of the Potential difference measured between probes 3 and 4 from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P3,
+---
+This dataset contains measurements of the Probe 3 to spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P4,
+---
+This dataset contains measurements of the Probe 4 to spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_E3D_GSE,
+---
+This dataset contains instantaneous values of the 3-dimensional Electric field vector in the inertial frame (i.e., vxB removed) in the spacecraft coordinate system (GSE), using EFW electric field data from C3_CP_EFW_L2_E and FGM magnetic field data from C3_CP_FGM_FULL that are interpolated to the time stamps of electric field data. The spin-axis component of the electric field is calculated with assumption of E.B equals 0 and with use of 2 electric field components measured in the spin plane and three magnetic field components. If the magnetic field component along the spin axis is less than 2 nT or the elevation angle of the magnetic field vector from the spacecraft spin plane is less than 15 degrees, the spin-axis electric field component has a FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_E3D_GSE. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L2_E3D_INERT,
+---
+This dataset contains instantaneous values of the 3-dimensional Electric field vector in the inertial frame (i.e., vxB removed) in the spacecraft coordinate system (ISR2), using EFW electric field data from C3_CP_EFW_L2_E and FGM magnetic field data from C3_CP_FGM_FULL that are interpolated to the time stamps of electric field data. The spin-axis component of the electric field is calculated with assumption of E.B equals 0 and with use of 2 electric field components measured in the spin plane and three magnetic field components. If the magnetic field component along the spin axis is less than 2 nT or the elevation angle of the magnetic field vector from the spacecraft spin plane is less than 15 degrees, the spin-axis electric field component has a FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_E3D_INERT. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L2_E,
+---
+This dataset contains measurements of the Electric field from the EFW experiment on the Cluster C3 spacecraft  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_E. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Single probe pair. Bit  9: Asymmetric mode. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L2_HK,
+---
+This dataset contains settings (bias current, puck and guard voltages) of the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_P,
+---
+This dataset contains measurements of the negative of the Spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_V3D_GSE,
+---
+This dataset contains instantaneous values of the ExB-drift velocity in GSE, using 3-dimensional EFW electric field data from C3_CP_EFW_L2_E3D_GSE and FGM magnetic field data from C3_CP_FGM_FULL that are interpolated to the time stamps of electric field data. When the spin-axis electric field component  has FILLVAL (i.e. it cannot be determined), the x- and y components of this dataset have FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_V3D_GSE. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L2_V3D_INERT,
+---
+This dataset contains instantaneous values of the ExB-drift velocity in ISR2, using 3-dimensional EFW electric field data from C3_CP_EFW_L2_E3D_INERT and FGM magnetic field data from C3_CP_FGM_FULL that are interpolated to the time stamps of electric field data. When the spin-axis electric field component  has FILLVAL (i.e. it cannot be determined), the x- and y components of this dataset have FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_V3D_INERT. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L3_DER,
+---
+This dataset contains DC offsets of raw (spinning) electric field signal measured by different probe pairs of the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L3_E3D_GSE,
+---
+This dataset contains 4-sec averages of the 3-dimensional Electric field vector in the inertial frame (i.e., vxB removed) in the spacecraft coordinate system (GSE), using EFW electric field data from C3_CP_EFW_L3_E and FGM magnetic field data from C3_CP_FGM_5VPS that are used to calculate the 4-sec averaged 3-dimensional magnetic field vector for the time stamps of electric field data. The spin-axis component of the electric field is calculated with assumption of E.B equals 0 and with use of 2 electric field components measured in the spin plane and three magnetic field components. If the magnetic field component along the spin axis is less than 2 nT or the elevation angle of the magnetic field vector from the spacecraft spin plane is less than 15 degrees, the spin-axis electric field component has a FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L3_E3D_GSE. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L3_E3D_INERT,
+---
+This dataset contains 4-sec averages of the 3-dimensional Electric field vector in the inertial frame (i.e., vxB removed) in the spacecraft coordinate system (ISR2), using EFW electric field data from C3_CP_EFW_L3_E and FGM magnetic field data from C3_CP_FGM_5VPS that are used to calculate the 4-sec averaged 3-dimensional magnetic field vector for the time stamps of electric field data. The spin-axis component of the electric field is calculated with assumption of E.B equals 0 and with use of 2 electric field components measured in the spin plane and three magnetic field components. If the magnetic field component along the spin axis is less than 2 nT or the elevation angle of the magnetic field vector from the spacecraft spin plane is less than 15 degrees, the spin-axis electric field component has a FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L3_E3D_INERT. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L3_E,
+---
+This dataset contains measurements of the Electric field (4 sec resolution) from the EFW experiment on the Cluster C3 spacecraft  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L3_E. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Not used
+
+
+
+C3_CP_EFW_L3_P,
+---
+This dataset contains measurements of the negative of the Spacecraft potential (4 sec resolution) from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L3_SFIT,
+---
+This dataset contains spinfits of the electric field from the individual probe pairs (4 sec resolution, every point corresponds to a fit of 4 sec-long interval) from the EFW experiment on the Cluster C3 spacecraft Note that the nominal probe pairs are p12 and p34. In case of failed probe 1, p12 is replaced by p32
+
+
+
+C3_CP_EFW_L3_V3D_GSE,
+---
+This dataset contains 4-sec averages of the ExB-drift velocity in GSE, using 3-dimensional EFW electric field data from C3_CP_EFW_L3_E3D_GSE and FGM magnetic field data from C3_CP_FGM_5VPS that are used to calculate the 4-sec average magnetic field vector for the time stamps of electric field data. When the spin-axis electric field component  has a FILLVAL (i.e. it cannot be determined), then the x- and y components of this dataset have FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L3_V3D_GSE. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L3_V3D_INERT,
+---
+This dataset contains 4-sec averages of the ExB-drift velocity in ISR2, using 3-dimensional EFW electric field data from C3_CP_EFW_L3_E3D_INERT and FGM magnetic field data from C3_CP_FGM_5VPS that are used to calculate the 4-sec average magnetic field vector for the time stamps of electric field data. When the spin-axis electric field component  has a FILLVAL (i.e. it cannot be determined), then the x- and y components of this dataset have FILLVAL.  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L3_V3D_INERT. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Not used. Bit  9: Not used. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L1_P12,
+---
+This dataset contains measurements of the Potential difference measured between probes 1 and 2 from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P1,
+---
+This dataset contains measurements of the Probe 1 to spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L1_P2,
+---
+This dataset contains measurements of the Probe 2 to spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_PB,
+---
+This dataset contains measurements of the negative of the Spacecraft potential (internal burst) from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_EB,
+---
+This dataset contains measurements of the Electric field (internal burst) from the EFW experiment on the Cluster C3 spacecraft  Detailed quality information is provided as a 16 bit set of flags in the parameter E_bitmask__C3_CP_EFW_L2_EB. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: Bad bias. Bit  2: Probe latchup. Bit  3: Low density saturation (-68V). Bit  4: Sweep (collection and dump). Bit  5: Burst dump. Bit  6: Non-standard operations (NS_OPS). Bit  7: Manual flag. Bit  8: Single probe pair. Bit  9: Asymmetric mode. Bit 10: Solar wind wake correction applied. Bit 11: Lobe wake. Bit 12: Plasmaspheric wake. Bit 13: Whisper operating. Bit 14: Saturation due to high bias current. Bit 15: Bias current DAC not responding correctly. Bit 16: Saturation due to probe shadow
+
+
+
+C3_CP_EFW_L1_IB,
+---
+This dataset contains measurements of up to 8 parameters (specified in the FILE_CAVEATS) collected during the internal burst of the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_L2_BB,
+---
+This dataset contains measurements of the Magnetic field (internal burst) from the EFW experiment on the Cluster C3 spacecraft  Detailed quality information is provided as a 16 bit set of flags in the parameter B_bitmask__C3_CP_EFW_L2_EB. The meaning of the bits is as follows (LSB numbering starting at 0): Bit  0: Reset. Bit  1: N/A. Bit  2: Probe latchup. Bits 3-15: N/A
+
+
+
+C3_CG_MULT_COMP_E_HIA_EFW,
+---
+Multi experiment electric field comparison between HIA and EFW are shown using
+                the following datasets:
+                C3_CP_EFW_L3_E3D_INERT
+                C3_CP_CIS-HIA_ONBOARD_MOMENTS_INERT
+                The plots show the EFW electric field components against HIA electric field
+                components in ISR2 coordinate system (pseudo-GSE). The three panels (top to
+                bottom) show the comparison for x, y, and z components. For each panel, the
+                black line shows 1:1 correspondence as a reference line. For the
+                generation of data points the following procedure is implemented: For each HIA
+                data point, it is searched if there is an EFW data point within +/-2 seconds
+                (half a spin), and the value or the average (if more than one value exist) is taken as
+                it is with no interpolation. So each point indicates that there is nearly a
+                simultaneous measurement by both instruments. On the right-hand side of each
+                panel there is a time series plot showing the duration of the interval in HH:MM
+                format on the x-axis and HIA vs EFW electric field readings on the y-axis.
+                One time series plot showing the duration of the interval in HH:MM format on
+                the x-axis and EFW Spacecraft Potential readings on the y-axis
+
+
+
+C3_CG_MULT_COMP_V_HIA_EFW,
+---
+Multi experiment drift velocity comparison between HIA and EFW are shown using
+                the following datasets:
+                C3_CP_EFW_L3_E3D_INERT
+                C3_CP_CIS-HIA_ONBOARD_MOMENTS_INERT
+                The plots show the EFW drift velocity components against HIA drift velocity
+                components in ISR2 coordinate system (pseudo-GSE). The three panels (top to
+                bottom) show the comparison for x, y, and z components. For each panel, the
+                black line shows 1:1 correspondence as a reference line. For the
+                generation of data points the following procedure is implemented: For each HIA
+                data point, it is searched if there is an EFW data point within +/-2 seconds
+                (half a spin), and the value or the average (if more than one value exist) is taken as
+                it is with no interpolation. So each point indicates that there is nearly a
+                simultaneous measurement by both instruments. On the right-hand side of each
+                panel there is a time series plot showing the duration of the interval in HH:MM
+                format on the x-axis and HIA vs EFW drift velocity readings on the y-axis.
+                One time series plot showing the duration of the interval in HH:MM format on
+                the x-axis and EFW Spacecraft Potential readings on the y-axis
+
+
+
+C3_CG_EFW_OVERVIEW_CAA,
+---
+The plot contains the following seven panels from top to bottom:
+                - Spin-resolution spacecraft potential taken from L3_P dataset
+                - Spin-resolution electric field x component in ISR2 taken from L3_E3D_INERT
+                - Spin-resolution electric field y component in ISR2 taken from L3_E3D_INERT
+                - Spin-resolution electric field z component in ISR2 taken from L3_E3D_INERT
+                - bitmask #8-15 taken from L2_E3D_INERT
+                - bitmask #1-7 taken from L2_E3D_INERT
+                Bottom panel includes information about the presence of
+                - caveat taken from CQ_EFW_INST
+                - internal burst taken from L1_I
+
+
+
+C3_CP_EFW_L1_E,
+---
+This dataset contains measurements of the electric field measured by probes 12/32 and 34 from the EFW experiment on the Cluster C3 spacecraft. Flag_p32 indicates whether P12 (Flag_p32=0) or P32 (Flag_p32=1) is used for E12/32
+
+
+
+C3_CP_EFW_L1_P,
+---
+This dataset contains measurements of the probes 1..4 to spacecraft potential from the EFW experiment on the Cluster C3 spacecraf
+
+
+
+C3_CP_EFW_IB_EVENTS,
+---
+EFW triggers Internal Burst (IB) operations normally twice per orbit, using a small internal burst memory. This dataset provides information about the measurements of each IB and gives the following parameters: Start time, Sampling frequency, Number of quantities sampled, and Quantities that were sampled
+
+
+
+C3_CG_EFW_L2_IB_B,
+---
+These plots show STAFF and EFW observations during Internal Burst (IB) intervals. The observations can be based on any set of STAFF search coil and EFW probes for magnetic field and spacecraft potential measurements
+
+
+
+C3_CG_EFW_L2_IB_E,
+---
+These plots show EFW observations during Internal Burst (IB) intervals. The observations can be based on any set of EFW probes for electric field and spacecraft potential measurements
+
+
