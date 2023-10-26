@@ -35,7 +35,7 @@ WHILE ~EOF(lun) DO BEGIN
     i ++
 ENDWHILE
 FREE_LUN, lun
-file_list = file_list[UNIQ(files)]
+file_list = file_list[UNIQ(files_list)]
 
 ;
 ;*---------- untar archive ----------*
