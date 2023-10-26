@@ -158,7 +158,8 @@ endif
 ;----------------------------------------------------------+
 ; Download
 ;----------------------------------------------------------+
-catch, err
+;catch, err
+err  = 0
 for i = 0, n_elements(url) - 1 do begin
     ;
 
@@ -190,13 +191,13 @@ for i = 0, n_elements(url) - 1 do begin
     ;
     ;*---------- untar  ----------*
     ;
-    file_untar, local_file, files=fn_tar, /list
-    dir = file_dirname(fn_tar)
-    file_mkdir, filepath( dir, root=self->data_rootdir() )
     ;
-    if float(!version.release) lt 8.3 then begin 
-        myfile_untar, local_file, saved_files
+    if float(!version.release) ge 8.3 then begin $
+        myfile_untar, local_file, files=saved_files  
     endif else begin
+        file_untar, local_file, files=fn_tar, /list
+        dir = file_dirname(fn_tar)
+        file_mkdir, filepath( dir, root=self->data_rootdir() )
         file_untar, local_file, files=saved_files 
     endelse
     file_delete, local_file, /quiet

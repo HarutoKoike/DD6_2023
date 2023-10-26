@@ -5,6 +5,7 @@
 @cluster::misc.pro
 @cluster::file_search.pro
 @cluster::metadata_request.pro
+@cluster::const.pro
 
 ; tools
 @cluster::inventory.pro
