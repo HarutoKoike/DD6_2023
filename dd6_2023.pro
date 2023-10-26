@@ -1,12 +1,13 @@
 
 ;
 ; import
-root = file_dirname( routine_filepath() )
+;root = file_dirname( routine_filepath() )
+cd, current=root
 path = '+' + filepath('cluster_load', root=root)  
 !path += ':' + expand_path(path)
 
 
-
+num = 0
 
 trange       = strarr(6, 2)
 trange[0, *] = ['2004-01-01', '2004-02-01']
