@@ -192,7 +192,7 @@ for i = 0, n_elements(url) - 1 do begin
     ;*---------- untar  ----------*
     ;
     ;
-    if float(!version.release) ge 8.3 then begin $
+    if float(!version.release) lt 8.3 then begin $
         myfile_untar, local_file, files=saved_files  
     endif else begin
         file_untar, local_file, files=fn_tar, /list
