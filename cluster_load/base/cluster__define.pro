@@ -42,6 +42,8 @@ self.end_date   = 1d
 ;
 self->delete_buffer
 
+if float(!version.release) lt 8.3 then self->const
+
 return, 1
 end
 

@@ -194,7 +194,11 @@ for i = 0, n_elements(url) - 1 do begin
     dir = file_dirname(fn_tar)
     file_mkdir, filepath( dir, root=self->data_rootdir() )
     ;
-    file_untar, local_file, files=saved_files 
+    if float(!version.release) lt 8.3 then begin $
+        myfile_untar, local_file, saved_files
+    endif else begin
+        file_untar, local_file, files=saved_files 
+    endelse
     file_delete, local_file, /quiet
     
     
