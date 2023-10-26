@@ -41,4 +41,9 @@ del_data, tn_del
 
 
 
+loadct, 39
+!p.background=255
+!p.color=0
+device, decomposed=0
+
 end
