@@ -6,6 +6,8 @@ cd, current=root
 path = '+' + filepath('cluster_load', root=root)  
 !path += ':' + expand_path(path)
 
+setenv, 'DATA_PATH='+getenv('HOME')+'/data'
+
 
 num = 0
 
