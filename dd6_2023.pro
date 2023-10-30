@@ -27,7 +27,7 @@ cl_load, 3, /cis, /pp
 
 
 tn = ['N_HIA__C3_PP_CIS', 'B_xyz_gsm__C3_PP_FGM', $
-      'pos_x_gsm_c3', 'pos_y_gsm_c3', 'pos_z_gsm_c3']
+      'pos_x_gsm_c3', 'pos_y_gsm_c3', 'pos_z_gsm_c3', 'B_mag__C3_PP_FGM']
 
 tn_del = tnames()
 
