@@ -1,0 +1,12 @@
+
+rm -rf cluster_load
+rm  dd6_2023.pro
+
+wget --no-check-certificate https://github.com/HarutoKoike/DD6_2023/archive/main.zip
+unzip main.zip
+cd DD6_2023-main
+mv dd6_2023.pro cluster_load ..
+cd -
+rm -rf DD6_2023-main
+rm main.zip
+
